@@ -2,12 +2,14 @@
 
 Automated prototype for detecting sensitive file exfiltration by correlating artifacts from disk images and captured network traffic.
 
+This is an educational project and has no intentions to turn into a production-level tool (at least for now).
+Developed as part of Master Thesis in Cybersecurity for Ivan Franko University of Lviv in 2025.
+Do not hesitate to contact for full thesis/documentation using any possible option.
+
 ### Input requirements:
 - Disk image
 - CSV-file with list of files and their filetypes, hashes OR the directory with the files themselves
 - Captured Network traffic PCAP file  (Optional)
-
-Developed as part of Master Thesis in Cybersecurity for Ivan Franko University of Lviv in 2025.
 
 ## Overview
 
@@ -28,13 +30,14 @@ The approach is research-oriented and tested on controlled datasets.
 
 ## Project Structure
 
+```bash
 exfiltration_forensics_tool/ \
-├── disk/              # Disk image analysis modules (hashing, artifact extraction) and top-level logic with UI \
-├── network/           # Network traffic parsing and ML-based detection \
-├── utils/             # Shared utilities (helpers, config, logging, etc.) \
-├── requirements.txt   # Python dependencies \
-└── README.md          # This file \
-
+├── disk/              # Disk image analysis modules (hashing, artifact extraction) and top-level logic with UI 
+├── network/           # Network traffic parsing and ML-based detection 
+├── utils/             # Shared utilities (helpers, config, logging, etc.) 
+├── requirements.txt   # Python dependencies 
+└── README.md          # This file 
+```
 
 ## Tech Stack
 
